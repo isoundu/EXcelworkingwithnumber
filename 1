@@ -1,0 +1,18 @@
+
+More than 5 ways to display the leading zeros in Excel
+
+="09876"	
+09876 (format, 00000)
+'09876	
+09876(select cell then selet text)	
+=TEXT(C6,"00000")	
+=RIGHT("00000"&D6,5)	
+=LEFT("0"&C6,5)	
+=CONCATENATE("0"&C6)	
+=MID("0"&C6,1,LEN(C6)+1)
+
+More than 4 ways to display number in full
+345439574395439000000	(format)
+345439574395439000000	(select numbers, remove 2 decimals)
+=TEXT(C4,0)	
+="345439574395439000000"
